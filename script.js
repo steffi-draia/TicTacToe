@@ -5,7 +5,7 @@ function showCurrentPlayer(currPlayer) {
   document.getElementById('statusGame').innerHTML = "It is " + currPlayer + " turn";
 }
 
-function putXorY(rowIndex, cellIndex) {
+function putXorZero(rowIndex, cellIndex) {
   ++noOfFilledCells;
   let table = document.getElementById('myTable');
   let cellClicked = table.rows[rowIndex].cells[cellIndex];
@@ -76,7 +76,7 @@ function resetGame() {
     for (let j = 0; j < table.rows[i].cells.length; ++j) {
       table.rows[i].cells[j].textContent = " ";
       table.rows[i].cells[j].onclick = function() {
-        putXorY(i, j);
+        putXorZero(i, j);
       };
     }
   }
