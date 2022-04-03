@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <title>Tic-Tac-Toe</title>
+  <style>
+    body{
+      background-color: grey;
+      background-size:100%;
+      background-repeat: norepeat;
+    }
+  </style>
+  <link href="table.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div style="text-align:center" id="div1">
+    <h1>Tic-Tac-Toe</h1>
+    <table style="margin-left:auto;margin-right:auto;" id="myTable">
+      <tr id="0">
+        <td onclick="putXorY(0, 0)">
+        </td>
+        <td onclick="putXorY(0, 1)">
+        </td>
+        <td onclick="putXorY(0, 2)">
+        </td>
+      </tr>
+      <tr>
+        <td onclick="putXorY(1, 0)">
+        </td>
+        <td onclick="putXorY(1, 1)">
+        </td>
+        <td onclick="putXorY(1, 2)">
+        </td>
+      </tr>
+      <tr>
+        <td onclick="putXorY(2, 0)">
+        </td>
+        <td onclick="putXorY(2, 1)">
+        </td>
+        <td onclick="putXorY(2, 2)">
+        </td>
+      </tr>
+    </table>
+    <h2 id="statusGame"></h2>
+    <button onClick="resetGame()">
+    Reset Game
+    </button>
+    <h3><span id="winner"></span></h3><br>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
